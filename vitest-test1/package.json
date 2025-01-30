@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "test": "vitest"
+    "test": "vitest --reporter verbose"
   },
   "devDependencies": {
     "vitest": "^3.0.4"
