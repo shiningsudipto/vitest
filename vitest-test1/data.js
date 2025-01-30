@@ -4,3 +4,7 @@ export async function fetchProducts() {
     { id: 2, name: "Treadmill", price: 500 },
   ];
 }
+
+export async function fetchData() {
+  return ["Dumbbell", "Treadmill", "Rowing Machine"];
+}

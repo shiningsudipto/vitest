@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { fetchProducts } from "./data";
+import { fetchData, fetchProducts } from "./data";
 
 describe("fetchProducts", () => {
   it("should return an array of objects", async () => {
@@ -23,5 +23,12 @@ describe("fetchProducts", () => {
       expect(item).toHaveProperty("name");
       expect(item).toHaveProperty("price");
     });
+  });
+
+  it("should return an array of products", async () => {
+    const data = await fetchData();
+
+    expect(Array.isArray(data)).toBe(true);
+    expect(data).toContain("Dumbbell");
   });
 });
