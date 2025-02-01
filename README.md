@@ -5,3 +5,24 @@
 ---
 
 - query && get
+
+---
+
+## TS
+
+tsConfig.json
+
+- "types":["vitest/globals"]
+
+setupTest.ts
+
+- import "@testing-library/jest-dom";
+
+## Script
+
+```
+"test": "vitest --run --reporter verbose",
+```
+
+> **--run** turns off watch mood
+> **--reporter verbose** shows test details
