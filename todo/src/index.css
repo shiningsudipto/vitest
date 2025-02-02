@@ -1,0 +1,63 @@
+body {
+  background-color: rgb(27, 27, 27);
+  color: white;
+  padding: 2rem;
+}
+
+.addTodo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.addTodo input {
+  padding: 1rem;
+}
+.addTodo button {
+  padding: 1rem;
+  font-weight: 700;
+  background-color: rgb(255, 124, 2);
+  color: white;
+}
+.todoListSection .label {
+  width: 100%;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #fff;
+}
+.todoSections {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-between;
+  gap: 2rem;
+}
+.todos {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.singleTodo {
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 1rem;
+  position: relative;
+}
+.status {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.delete-btn {
+  background-color: transparent;
+  border: none;
+  padding: 0.2rem;
+  border: 1px solid gray;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  position: absolute;
+  top: 0.4rem;
+  right: 0.4rem;
+}
+.todoLabel {
+  font-size: 1.4rem;
+  margin-bottom: 0.6rem;
+}
